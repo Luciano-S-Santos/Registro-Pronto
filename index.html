@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/rp.css">
+
+        <!--seletor style-->
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+        <!--end seletor style-->
+
+    <!--END STYLES-->
+
+    <title>Registro Pronto</title>
+
+</head>
+<body>
+    <header>
+        <div class="centralize">
+            <div id="logotipo">
+                <a href="">
+                    <div id="logotipo-title">
+                        <h1><div class="highlighter">Registro</div> Pronto</h1>
+                    </div>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>DLLS</li>
+                    <li>ÚLTEIS</li>
+                    <li>AÇÕES
+                        <div id="dropdown-acoes">
+                            <ul>
+                                <li>CADASTRAR</li>
+                                <li>SAIR</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="banner-initial">
+            <img src="assets/images/pexels-nao-triponez-129208.jpg" alt="imagem do banner">
+            <div class="centralize">
+                <div id="banner-initial-text">
+                    <h2>AGILIDADE <div class="highlighter">+</div> PRODUTIVIDADE</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maxime laboriosam magnam</P>
+
+                    <div id="bt-acoes-banner">
+                        <a href="#mask-conatiner" class="bt-all" id="bt-gerar-registro">GERAR REGISTRO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="mask-conatiner">
+            <div class="centralize">
+                <h2>Máscara de registro</h2>
+                <div id="mask-block">
+                    <div id="mask-input-container">
+                        <div id="mask-input">
+                            <!--SELECT BOOTSTRAP-->
+                            <div class="row-fluid">
+                                <select class="selectpicker" data-show-subtext="true" data-live-search="true">
+                                  <option>A1 - DÚVIDA NA BAIXA</option>
+                                  <option>A1 - DÚVIDA NA UTILIZAÇÃO</option>
+                                  <option>A1 - ALTERAÇÃO DE SENHA</option>
+                                  <option>BIRD ID - BUGANDO NOVAMENTE</option>
+                                  <option>BIRD ID - ASSINATURAS ZERADAS</option>
+                                  <option data-subtext="teste" disabled="disabled">A3 - DÚVIDA NO BIRICUTICO</option>
+                                </select>
+                            </div>
+                            <!--END SELECT BOOTSTRAP-->
+                            <button type="submit" id="bt-gerar" class="bt-all">GERAR</button>
+                        </div>
+                    </div>
+                    <div id="mask-textarea">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div id="bt-actions-container">
+                        <div id="bt-actions">
+                            <button class="bt-all">Copiar</button>
+                            <button class="bt-all">Limpar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!--SCRIPTS-->
+    <script src="assets/scripts/script.js"></script>
+        <!--seletor-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+        <!--end seletor-->
+    <!--END SCRIPTS-->
+</body>
+</html>

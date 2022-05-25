@@ -1,0 +1,117 @@
+/************END CONFIG PADRÃO************/
+
+
+/************BANNER SECTION************/
+#banner-initial{
+    height: 720px;
+    overflow: hidden;
+    align-items: center;
+
+}
+#banner-initial img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+#banner-initial-text {
+    position: absolute;
+    color:#fff;
+    top: 300px;
+    width: 400px;
+    height: 30px;
+}
+#banner-initial-text h2{
+    font-size: 45px;
+}
+#banner-initial-text P{
+    font-size: 16px;
+}
+#bt-acoes-banner{
+    padding-top: 20px;
+}
+#bt-acoes-banner a{
+    background-color: var(--color-black);
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+}
+#bt-acoes-banner a:hover{
+    border: 2px solid var(--color-simbol);
+    color: var(--color-simbol);
+}
+/************END BANNER SECTION************/
+
+
+/************MASCARA SECTION***********/
+#mask-conatiner{
+    margin-bottom: 300px;
+}
+#mask-conatiner .centralize{
+    display: block;
+}
+#mask-conatiner .centralize h2{
+    font-size: 30px;
+
+}
+#mask-block{
+    padding: 30px;
+    border-top: 1.5px solid black;
+}
+#mask-input-container{
+    display: flex;
+    padding: 30px;
+}
+#mask-input{
+    margin: auto;
+    display: flex;
+}
+#bt-gerar{
+    margin-left: 10px;
+}
+#mask-textarea{
+    padding: 20px;
+}
+#mask-textarea textarea{
+    margin: auto;
+    padding: 10px;
+    display: block;
+    width: 580px;
+    min-width: 400px;
+    max-width: 640px;
+    height: 400px;
+    min-height: 350px;
+    max-height: 500px;
+    border: 2px solid var(--color-black);
+}
+#bt-actions-container{
+    display: flex;
+}
+#bt-actions{
+    margin: auto;
+    margin-right: 25%;
+}
+/*select*/
+.row-fluid{
+    margin: auto;
+    font-weight: bold !important;
+}
+.row-fluid button{
+    border: solid 2px var(--color-black);
+}
+.dropdown-menu{
+    height: 300px;
+}
+.btn-group{
+    min-width: 500px;
+}
+.btn-group button{
+    background-color: transparent !important;
+}
+.btn-group input:focus{
+    box-shadow: none;
+    border-color:  rgb(145, 145, 145);
+}
+/*end seçect*/
+
+/************END MASCARA SECTION************/

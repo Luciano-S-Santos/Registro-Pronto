@@ -1,0 +1,98 @@
+/************CONFIG PADRÃO************/
+@charset "UTF-8";
+
+:root{
+    /*CORES*/
+    --color-simbol: rgb(38, 218, 83);
+    --color-black: rgb(36, 36, 36);
+}
+
+/************END CONFIG PADRÃO************/
+
+
+/************BODY************/
+body{
+    margin: 0;
+    padding: 0;
+}
+/************END BODY************/
+
+
+/************ÚTEIS************/
+.highlighter{
+    color: var(--color-simbol);
+    display: inline;
+}
+.centralize{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+.bt-all{
+    background-color: transparent;
+    border: 2px solid var(--color-black);
+    padding: 7px;
+    font-weight: bold;
+    transition: .3s;
+}
+.bt-all:hover{
+    border: 2px solid var(--color-simbol);
+    color: var(--color-simbol);
+
+}
+/************END ÚTEIS************/
+
+
+/************HEADER************/
+header{
+    background-color: white;
+}
+header h1{
+    margin: 0 5px;
+    font-size: 25px;
+}
+/*navagação*/
+nav{
+    margin-left: auto;
+    margin-right: 5%;
+}
+header ul{
+    margin-top: 15px;
+}
+header ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+/*dropdown do menu de acoes*/
+#dropdown-acoes{
+    position: absolute;
+    display: none;
+}
+#dropdown-acoes ul{
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    list-style: none;
+}
+#dropdown-acoes li{
+    display: block;
+}
+
+/*logo do site*/
+#logotipo{
+    margin-left: 5%;
+    padding: 10px;
+}
+#logotipo-title{
+    width: 100%;
+    display: flex;
+}
+#logotipo a{
+    color: black;
+    text-decoration: none;
+}
+
+
+/************END HEADER************/
