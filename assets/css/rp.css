@@ -85,7 +85,7 @@
 #bt-actions{
     display: flex;
     margin: auto;
-    margin-right: 24%;
+    margin-right: 24.2%;
 }
 #bt-actions .bt-all:not(:last-child){
     margin-right: 20px;
