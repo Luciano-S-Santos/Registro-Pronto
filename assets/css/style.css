@@ -6,6 +6,7 @@
 :root{
     /*CORES*/
     --color-simbol: rgb(38, 218, 83);
+    --color-simbol-dark: rgb(32, 179, 68);
     --color-black: rgb(36, 36, 36);
     --font-all: 'Open Sans', sans-serif;
 }
@@ -76,19 +77,49 @@ nav{
     margin-left: auto;
     margin-right: 5%;
 }
-header ul{
+nav ul{
     margin-top: 15px;
     
 }
-header ul li{
+nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 0 10px;
+    margin: -2px;
+}
+nav ul li:hover a{
+    color: var(--color-simbol);
+}
+nav ul li a{
+    color: var(--color-black);
+    text-decoration: none !important;
+    padding: 2px 15px;
 }
 /*dropdown do menu de acoes*/
+
 #dropdown-acoes{
+    color: white;
     position: absolute;
-    display: none;
+    z-index: 10;
+    margin-left: -20px;
+    margin-top: -1px;
+    opacity: .2;
+    visibility: hidden;
+    padding-top: 10px;
+}
+#dropdown-itens{
+    background-color: var(--color-simbol);
+    margin-top: 3px;
+    border: 2px solid white;
+}
+li:hover #menu-acoes ~ #dropdown-acoes{
+    opacity: 1;
+    transition: .4s;
+    visibility: visible;
+}
+#dropdown-acoes:hover{
+    opacity: 1;
+    transition: .4s;
+    visibility: visible;
 }
 #dropdown-acoes ul{
     margin: 0;
@@ -97,8 +128,16 @@ header ul li{
 }
 #dropdown-acoes li{
     display: block;
+    padding: 10px;
+    margin: 0;
 }
-
+#dropdown-acoes li a{
+    color: white;
+    text-decoration: none;
+}
+#dropdown-acoes li:hover{
+    background-color: var(--color-simbol-dark);
+}
 /*logo do site*/
 #logotipo{
     margin-left: 5%;
