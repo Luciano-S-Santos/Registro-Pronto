@@ -1,0 +1,56 @@
+/************INTRO************/
+#dll-container{
+    width: 100%;
+    padding: 15px;
+}
+
+#dll-text{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+
+}
+#dlls-list{
+    display: flex;
+    margin: 10px auto;
+    padding: 10px;
+}
+.dlls-box{
+    border: 2px solid black;
+    width: 300px;
+    height: 270px;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+}
+.dlls-box:hover{
+    border: 2px solid var(--color-simbol);
+    transition: .4s;
+}
+.dlls-box:hover h3{
+    color: var(--color-simbol);
+    transition: .4s;
+}
+.dlls-box h3{
+    margin: 15px auto;
+}
+.dlls-box-efect{
+    margin: auto;
+    height: 100%;
+    padding: 10px;
+}
+.dlls-box-efect:hover{
+    padding: 5px;
+    transition: .4s;
+}
+
+.dlls-box ul{
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+}
+.dlls-box ul li{
+    list-style: none;
+}
+/************END INTRO************/

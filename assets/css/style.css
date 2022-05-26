@@ -1,10 +1,13 @@
 /************CONFIG PADRÃO************/
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400 & display=swap');
+
 :root{
     /*CORES*/
     --color-simbol: rgb(38, 218, 83);
     --color-black: rgb(36, 36, 36);
+    --font-all: 'Open Sans', sans-serif;
 }
 
 /************END CONFIG PADRÃO************/
@@ -14,6 +17,13 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: var(--font-all) !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh ;  
+}
+main{
+    flex: 1;  
 }
 /************END BODY************/
 
@@ -21,13 +31,17 @@ body{
 /************ÚTEIS************/
 .highlighter{
     color: var(--color-simbol);
-    display: inline;
+    display: inline-block;
 }
 .centralize{
     display: flex;
     max-width: 1200px;
     margin: auto;
     padding: 10px;
+}
+.centralize-block{
+    max-width: 800px;
+    margin: 50px auto;
 }
 .bt-all{
     background-color: transparent;
@@ -41,6 +55,11 @@ body{
     color: var(--color-simbol);
 
 }
+/*cortando uns padrões*/
+input:focus, textarea:focus, select:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
 /************END ÚTEIS************/
 
 
@@ -50,7 +69,7 @@ header{
 }
 header h1{
     margin: 0 5px;
-    font-size: 25px;
+    font-size: 25px !important;
 }
 /*navagação*/
 nav{
@@ -59,6 +78,7 @@ nav{
 }
 header ul{
     margin-top: 15px;
+    
 }
 header ul li{
     display: inline-block;
@@ -73,7 +93,6 @@ header ul li{
 #dropdown-acoes ul{
     margin: 0;
     padding: 0;
-    background-color: blue;
     list-style: none;
 }
 #dropdown-acoes li{
@@ -94,5 +113,49 @@ header ul li{
     text-decoration: none;
 }
 
-
 /************END HEADER************/
+
+
+/************SECTION TITLE************/
+#title{
+    background-color: var(--color-simbol);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+/************END SECTION TITLE************/
+
+
+/************FOOTER************/
+footer{
+    background-color: var(--color-black);
+    color: white;
+    padding: 20px;
+}
+footer h2{
+    margin-bottom: 35px;
+}
+#suggestion-container{
+    margin-bottom: 60px;
+    color: black;
+    display: flex;
+}
+#input-area{
+    margin-right: 5px;
+    width: 250px;
+}
+#input-area input, button{
+    width: 100%;
+    margin-bottom: 5px;
+    height: 40px;
+}
+#sgg-message{
+    resize: none;
+}
+#sgg-bt-send{
+    background-color: var(--color-simbol);
+    border: none;
+}
+/************END FOOTER************/
+
+
