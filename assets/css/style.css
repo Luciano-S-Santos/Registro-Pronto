@@ -72,6 +72,21 @@ header h1{
     margin: 0 5px;
     font-size: 25px !important;
 }
+
+/*logo do site*/
+#logotipo{
+    margin-left: 5%;
+    padding: 10px;
+}
+#logotipo-title{
+    width: 100%;
+    display: flex;
+}
+#logotipo a{
+    color: black;
+    text-decoration: none;
+}
+
 /*navagação*/
 nav{
     margin-left: auto;
@@ -138,20 +153,20 @@ li:hover #menu-acoes ~ #dropdown-acoes{
 #dropdown-acoes li:hover{
     background-color: var(--color-simbol-dark);
 }
-/*logo do site*/
-#logotipo{
-    margin-left: 5%;
-    padding: 10px;
+/*menu lateral*/
+#menu-lateral{
+    margin: auto;
+    margin-right: 10px;
+    display: none;
 }
-#logotipo-title{
-    width: 100%;
-    display: flex;
+#menu-lateral button{
+    background-color: transparent;
+    border: none;
 }
-#logotipo a{
-    color: black;
-    text-decoration: none;
+#menu-lateral img{
+    width: 30px;
+    height: 30px;
 }
-
 /************END HEADER************/
 
 
@@ -198,3 +213,16 @@ footer h2{
 /************END FOOTER************/
 
 
+/************QUERRYS************/
+@media (max-width: 1024px){
+    #logotipo{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    nav{
+        display: none !important;
+    }
+    #menu-lateral{
+        display: block;
+    }
+}

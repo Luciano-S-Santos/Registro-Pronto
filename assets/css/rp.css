@@ -3,7 +3,7 @@
 
 /************BANNER SECTION************/
 #banner-initial{
-    height: 750px;
+    height: 760px;
     overflow: hidden;
     align-items: center;
 
@@ -73,6 +73,8 @@
     margin-bottom: 15px;
 }
 #mask-textarea textarea{
+    width: 572px;
+    height: 450px;
     resize: none;
     margin: auto;
     padding: 10px;
@@ -114,3 +116,53 @@
 /*end seçect*/
 
 /************END MASCARA SECTION************/
+
+/************QUERRY************/
+@media (max-width: 1165px){
+    #banner-initial{
+        height: 700px;
+    }
+}
+@media (max-width: 1024px){
+    #banner-initial{
+        height: 610px;
+    }
+    #banner-initial-text {
+        position: absolute;
+        color:#fff;
+        top: 240px;
+        width: 400px;
+        height: 30px;
+        margin-left: 40px;
+    }
+}
+@media(max-width: 513px){
+    #banner-initial{
+        height: 630px;
+    }
+    #banner-initial-text {
+        position: absolute;
+        color:#fff;
+        top: 240px;
+        width: 400px;
+        height: 30px;
+        margin-left: 40px;
+    }
+    #mask-block{
+        padding: 0;
+    }
+    #mask-textarea textarea{
+        width: 430px;
+        height: 450px;
+    }
+    .dropdown-menu{
+        height: 300px;
+    }
+    .btn-group{
+        min-width: 358px;
+    }
+    #bt-actions{
+        margin-right: 2.9%;
+    }
+}
+

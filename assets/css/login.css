@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+#login{
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+}
+#login h1{
+    text-align: center;
+    margin: 20px;
+    color: var(--color-simbol);
+}
+#centralizador{
+    margin: auto;
+    width: 318px;
+    padding: 10px;
+}
+.inpt{
+    width: 290px;
+    height: 30px;
+    margin: 15px auto;
+    padding: 0 7px;
+    border: none;
+    border-bottom: 2px solid rgb(177, 177, 177);
+    font-size: .9em;
+}
+input:focus{
+    border-bottom: 2px solid var(--color-simbol);
+}
+input:focus, textarea:focus, select:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+#pswd{
+    margin-bottom: 50px;
+}
+#senhainpt{
+    display: inline-block;
+}
+#bt-login{
+    background-image: linear-gradient(to right, rgb(90, 206, 128), var(--color-simbol));
+    border: none;
+    padding: 15px;
+    width: 250px;
+    display: block;
+    margin: 30px auto;
+    color: white;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: bold;
+}
+#login p{
+    color: var(--color-black);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1em;
+}
+#login a{
+    color: var(--color-simbol);
+}
+#logotipo h1{
+    color: white;
+}
