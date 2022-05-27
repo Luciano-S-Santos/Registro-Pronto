@@ -67,6 +67,7 @@ input:focus, textarea:focus, select:focus{
 /************HEADER************/
 header{
     background-color: white;
+    z-index: 20;
 }
 header h1{
     margin: 0 5px;
@@ -88,10 +89,13 @@ header h1{
 }
 
 /*navagação*/
-
-nav{
-    margin-left: auto;
+#navegation-container{
+    margin: auto;
+    display: flex;
     margin-right: 5%;
+    height: 100%;
+}
+nav{
 }
 nav ul{
     margin-top: 15px;
@@ -109,6 +113,11 @@ nav ul li a{
     color: var(--color-black);
     text-decoration: none !important;
     padding: 2px 15px;
+}
+#menu-lateral{
+    background-color: transparent;
+    border: none;
+    display: none;
 }
 /*dropdown do menu de acoes*/
 
@@ -156,13 +165,10 @@ li:hover #menu-acoes ~ #dropdown-acoes{
 }
 /*menu lateral*/
 #menu-lateral{
+    width: 40px;
+    padding: 0;
     margin: auto;
     margin-right: 10px;
-    display: none;
-}
-#menu-lateral button{
-    background-color: transparent;
-    border: none;
 }
 #menu-lateral img{
     width: 35px;
@@ -213,7 +219,6 @@ footer h2{
 }
 /************END FOOTER************/
 
-
 /************QUERRYS************/
 @media (max-width: 1024px){
     #logotipo{
@@ -222,24 +227,43 @@ footer h2{
     }
     /*navegação lateral*/
     #navegation-container{
-        height: 150px;
+        left: 0;
         width: 100%;
-        margin-left: -10px;
+        height: 110px;
+        margin: 0;
         position: absolute;
-        z-index: 11;
-        font-size: 20px;
-        text-align: center;
-        top: -130px;
-        background-color: rebeccapurple;
+        font-size: 15px;
+        background-color: transparent;
+        transition: .4s;
+        display: block;
+        visibility: hidden;
+        margin-top: 57px;
     }
     nav{
-        margin-top: 25px;
         width: 100%;
+        text-align: center;
+        padding-top: 15px;
     }
     nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    nav a{
+        color: white !important;
+        opacity: 0;
     }
     #menu-lateral{
+        border: none;
         display: block;
+    }
+    #menu-lateral:focus ~#navegation-container{
+        transition: .5s;
+        background-color: var(--color-simbol);
+        visibility: visible;
+    }
+    #menu-lateral:focus ~#navegation-container nav a{
+        transition: .5s;
+        opacity: 1;
     }
     
 
