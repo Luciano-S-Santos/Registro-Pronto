@@ -152,14 +152,14 @@
         padding: 0;
     }
     #mask-textarea textarea{
-        width: 430px;
+        width: 400px;
         height: 450px;
     }
     .dropdown-menu{
         height: 300px;
     }
     .btn-group{
-        min-width: 358px;
+        min-width: 327px;
     }
     #bt-actions{
         margin-right: 2.9%;

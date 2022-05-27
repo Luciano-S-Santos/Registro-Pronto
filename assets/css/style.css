@@ -233,7 +233,6 @@ footer h2{
         margin: 0;
         position: absolute;
         font-size: 15px;
-        background-color: transparent;
         transition: .4s;
         display: block;
         visibility: hidden;
