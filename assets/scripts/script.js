@@ -1,5 +1,5 @@
-function animationScroll(){
-    const btLink = document.getElementById('bt-gerar-registro')
+function animationScroll(itemId){
+    const btLink = document.getElementById(itemId)
 
     btLink.addEventListener('click', (event) =>{
         event.preventDefault()
@@ -11,6 +11,7 @@ function animationScroll(){
     function getScrollByHref(element){
         const id = element.getAttribute('href')
         return document.querySelector(id).offsetTop
+        console.log('clicou');
     }
 
 
@@ -43,4 +44,4 @@ function animationScroll(){
     };
 }
 
-animationScroll()
+animationScroll("bt-gerar-registro")

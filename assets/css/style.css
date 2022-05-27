@@ -88,6 +88,7 @@ header h1{
 }
 
 /*navagação*/
+
 nav{
     margin-left: auto;
     margin-right: 5%;
@@ -164,8 +165,8 @@ li:hover #menu-acoes ~ #dropdown-acoes{
     border: none;
 }
 #menu-lateral img{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
 /************END HEADER************/
 
@@ -219,10 +220,27 @@ footer h2{
         padding-left: 0;
         margin-left: 0;
     }
+    /*navegação lateral*/
+    #navegation-container{
+        height: 150px;
+        width: 100%;
+        margin-left: -10px;
+        position: absolute;
+        z-index: 11;
+        font-size: 20px;
+        text-align: center;
+        top: -130px;
+        background-color: rebeccapurple;
+    }
     nav{
-        display: none !important;
+        margin-top: 25px;
+        width: 100%;
+    }
+    nav ul{
     }
     #menu-lateral{
         display: block;
     }
+    
+
 }
