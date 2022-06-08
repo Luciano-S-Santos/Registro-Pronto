@@ -1,3 +1,5 @@
+//rolagem ao clicar 
+/*OBS: PRECISO DEIXAR O CÓDIGO MAIS REAPROVEITÁVEL*/
 function animationScroll(itemId){
     const btLink = document.getElementById(itemId)
 
@@ -11,7 +13,6 @@ function animationScroll(itemId){
     function getScrollByHref(element){
         const id = element.getAttribute('href')
         return document.querySelector(id).offsetTop
-        console.log('clicou');
     }
 
 
@@ -45,3 +46,5 @@ function animationScroll(itemId){
 }
 
 animationScroll("bt-gerar-registro")
+
+//end rolagem ao clicar 
